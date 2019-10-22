@@ -1,0 +1,37 @@
+<div>
+  <div id="filterDiv" style="background-color:#EAECEE; padding:5px;">   
+    <div>
+     Find <b>Permit History</b> & <b>Feature Drawings</b> (E-vault Documents) within an area drawn on map. 
+
+    <div data-dojo-type="dijit/TitlePane" data-dojo-props="title: '<b>Instructions</b>', open: false"  style="padding:10px 0px 10px 0px">
+     <p>
+     Find documents within an area that includes any part of a parcel or street. Please limit query area to 200 acres or 1,000 address points.
+     </p>
+     <br><b>Steps to draw selection area:</b>
+      <ul>
+      <li>Click starting point on map.</li>
+      <li>Click to continue adding boundary points.</li>
+      <li>Double-click last boundary point to complete.</li>
+      <li>
+       Results will appear in the <b>Permit History</b> and <b>Feature Drawings</b> sections below.    
+       <font color="blue"><u>Blue text with underlines</u></font> are links to E-Vault Documents.
+       <font color="blue">Blue text without underlines</font> may be clicked to show data location. 
+       A <b>CSV</b> file is also created for downloading results and links.
+     </li>
+      </ul>  
+    </div>
+     
+    </div>
+
+    <div>
+      <button id="buttonDraw" type="button"></button> <!-- remove graphic, but stay in edit mode -->
+    </div>
+    
+  </div>
+
+    <div data-dojo-attach-point="permitHistory"  style="padding:10px 0px 0px 0px"></div>
+    <div data-dojo-attach-point="featureDrawings"  style="padding:10px 0px 10px 0px"></div>
+    <div id="CSV_Button"></div>
+
+</div>
+
